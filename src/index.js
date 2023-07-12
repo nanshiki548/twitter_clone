@@ -1,15 +1,16 @@
+//reactのバックエンドを動かすためのフォルダ
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
+
+const root = ReactDOM.createRoot(document.getElementById('root')); //rootはpublick/index.htmlのrootと繋がる
+root.render(                           //render関数はdivタグの中のrootに対してAppというコンポーネントを入れていくという意味
+  <React.StrictMode>   
     <App />
   </React.StrictMode>
-);
+);             //潜在的なエラーやバグをコンソールに出力してくれるモード(StrictMode), 消してもアプリは動く
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
